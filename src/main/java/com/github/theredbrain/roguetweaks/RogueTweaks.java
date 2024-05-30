@@ -14,7 +14,7 @@ public class RogueTweaks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("We are going on an adventure!");
+		LOGGER.info("Rogue Tweaks initialized");
 
 		// Registry
 		EventsRegistry.initializeEvents();

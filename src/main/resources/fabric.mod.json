@@ -3,12 +3,12 @@
 	"id": "roguetweaks",
 	"version": "${version}",
 	"name": "Rogue Tweaks",
-	"description": "Adds game rules and tweaks which enable roguelike/lite gameplay.",
+	"description": "Adds game rules which enable roguelike/lite gameplay.",
 	"authors": [
 		"TheRedBrain"
 	],
 	"contact": {
-		"sources": "https://github.com/TheRedBrain/redbrainstweaks"
+		"sources": "https://github.com/TheRedBrain/rogue-tweaks"
 	},
 	"license": "MIT",
 	"environment": "*",
@@ -26,16 +26,14 @@
 		]
 	},
 	"mixins": [
-      "roguetweaks.mixins.json",
-		{
-			"config": "roguetweaks.client.mixins.json",
-			"environment": "client"
-		}
+      "roguetweaks.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
+		"fabricloader": ">=0.14.20",
 		"minecraft": "1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"cardinal-components-base": ">=5.2.2",
+		"cardinal-components-entity": ">=5.2.2"
 	}
 }
