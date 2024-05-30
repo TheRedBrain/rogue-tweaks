@@ -1,9 +1,8 @@
-# Fabric Example Mod
+# Rogue Tweaks
 
-## Setup
+Adds game rules which enable roguelike/lite gameplay.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+- clearEnderChestOnDeath
+- resetAdvancementsOnDeath
+- resetRecipesOnDeath
+- minOfflineTicksToTeleportToSpawn, when a player joins the game and was offline for more ticks than this gamerule sets, the player is respawned back at their spawn point. Set to -1 to disable. Set to 0 to enable in single player worlds.

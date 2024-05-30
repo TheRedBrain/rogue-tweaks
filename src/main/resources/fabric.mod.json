@@ -1,41 +1,41 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "roguetweaks",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Rogue Tweaks",
+	"description": "Adds game rules and tweaks which enable roguelike/lite gameplay.",
 	"authors": [
-		"Me!"
+		"TheRedBrain"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/TheRedBrain/redbrainstweaks"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "MIT",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.github.theredbrain.roguetweaks.RogueTweaks"
 		],
-		"client": [
-			"com.example.ExampleModClient"
+		"cardinal-components-entity": [
+			"com.github.theredbrain.roguetweaks.registry.ComponentsRegistry"
+		]
+	},
+	"custom": {
+		"cardinal-components": [
+			"roguetweaks:last_logout_time"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+      "roguetweaks.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "roguetweaks.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.6",
-		"java": ">=21",
+		"fabricloader": ">=0.15.11",
+		"minecraft": "1.20.1",
+		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

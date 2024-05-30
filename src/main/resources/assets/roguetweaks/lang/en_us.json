@@ -1,0 +1,6 @@
+{
+	"gamerule.clearEnderChestOnDeath": "Clear ender chest on death",
+	"gamerule.resetAdvancementsOnDeath": "Reset advancements on death",
+	"gamerule.resetRecipesOnDeath": "Reset recipes on death",
+	"gamerule.minOfflineTicksToTeleportToSpawn": "Teleport to spawn on login when offline for this amount of ticks. Disabled when set to -1."
+}
